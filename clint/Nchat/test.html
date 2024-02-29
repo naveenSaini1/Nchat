@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #upload-btn-wrapper {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        #upload-btn-wrapper input[type=file] {
+            font-size: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+        #file-name {
+            margin-left: 10px;
+        }
+
+        #uploaded-image {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Upload Example</h1>
+
+    <div id="upload-btn-wrapper">
+        <button class="btn">Choose a file</button>
+        <input type="file" name="myfile" id="myfile" accept="image/*" />
+        <span id="file-name">No file chosen</span>
+    </div>
+
+    <div>
+        <img id="uploaded-image" src="" alt="Uploaded Image">
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('myfile');
+        const fileNameDisplay = document.getElementById('file-name');
+        const uploadedImage = document.getElementById('uploaded-image');
+
+        fileInput.addEventListener('change', function() {
+            const fileName = this.files[0].name;
+            fileNameDisplay.textContent = fileName;
+
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                console.log(e);
+
+                uploadedImage.src = e.target.result;
+            }
+
+            reader.readAsDataURL(this.files[0]);
+        });
+    </script>
+</body>
+</html>

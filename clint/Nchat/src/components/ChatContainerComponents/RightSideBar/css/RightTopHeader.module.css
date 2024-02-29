@@ -1,0 +1,21 @@
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-grow: 0;
+}
+.topHeaderUserInfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 3px;
+    
+}
+.topImage{
+    display: flex;
+}
+.topImage img{
+    width: 54px;
+    height: 41px;
+    border-radius: 50%;
+}

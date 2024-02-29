@@ -1,0 +1,56 @@
+.friendsItemContainer{
+    display: flex;
+    justify-content: center;
+    max-height: 200px;
+    width: 98%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 4px 1px;
+    border: 1px solid #afacac;
+    margin: auto;
+    cursor: pointer;
+}
+.friendsIcons{
+    width: 40px;
+    border-radius: 4px;
+    flex: 1;
+    position: relative;
+}
+.friendsIcons img{
+    width: 100%;
+    width: 70px;
+    height: 63px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: block;
+    margin: auto;
+}
+
+.friendsBio{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 7px 0px;
+}
+.notificonsIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    flex: 1;
+}
+.notificonsIcons p{
+    padding: 4px 7px;
+    border-radius: 50%;
+    background: #0cd70c;
+    color: white;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.activeFriend{
+    border: 8px solid lime;
+    position: absolute;
+    border-radius: 50%;
+    right: 6%;
+    bottom: 40%;
+}

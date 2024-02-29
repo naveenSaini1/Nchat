@@ -1,0 +1,70 @@
+.chatMessageContainer{
+    width: 100%;
+    border: 2px solid yellow;
+    flex-grow: 2;
+    overflow: scroll;
+    padding: 3px 16px;
+    text-transform: capitalize;
+}
+.leftP{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+}
+.leftP .leftPDiv{
+    border: 2px solid #e6e5e5;
+    padding: 5px 8px 6px 8px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 6px rgb(202, 202, 202));
+    background: #afedaf;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.rightP{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+
+}
+.rightP p{
+    border: 2px solid #e6e5e5;
+    padding: 3px 7px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 6px gray);
+}
+.logoFirstDiv{
+    width: 6px;
+    border: 1px solid #0572ff;
+    position: absolute;
+    top: 32%;
+    transform: rotate(45deg);
+    right: 18%;
+}
+
+.logoSecDiv{
+    border: 1px solid black;
+    width: 16px;
+    position: absolute;
+    top: 24%;
+    transform: rotate(137deg);
+    right: -6%;
+
+}
+
+.seenMessageMainContainer{
+    height: 19px;
+    position: relative;
+    width: 50px;
+}
+.seenSignBorderBlue{
+    border-color: #0572ff  !important;
+}
+.seenSignBordergray{
+    border-color: gray !important;
+}

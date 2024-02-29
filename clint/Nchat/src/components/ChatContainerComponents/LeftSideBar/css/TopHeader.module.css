@@ -1,0 +1,21 @@
+.topHeader
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    width: 100%;
+
+}
+.image
+{
+
+}
+.image img{
+    border: 3px solid #cddc39;
+    padding: 2px;
+    border-radius: 50%;
+    border-top-color: #ff5722;
+    border-left-color: #ff5722;
+    width: 57px;
+    height: 55px;
+}

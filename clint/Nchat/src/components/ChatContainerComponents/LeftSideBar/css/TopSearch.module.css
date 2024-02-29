@@ -1,0 +1,21 @@
+.searchContainer{
+    border: 1px solid black;
+    width: 100%;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.searchIcon{
+
+    width: 20%;
+
+}
+.searchInput{
+
+    width: 80%;
+}
+.searchInput input{
+    width: 100%;
+}

@@ -1,0 +1,6 @@
+.rightSideBar{
+    width: 60%;
+    border: 2px solid rgb(196, 196, 196);
+    display: flex;
+    flex-direction: column;
+}

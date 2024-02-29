@@ -1,0 +1,14 @@
+.messageContainer{
+    width: 100%;
+    padding: 2px 3px;
+    flex-grow: 0;
+    display: flex;
+}
+.sendMessageInput{
+   flex-grow: 1;
+    padding:0px 10px;
+}
+.sendMessageBtn{
+  flex-grow: 0;
+    padding: 2px 4px;
+}
